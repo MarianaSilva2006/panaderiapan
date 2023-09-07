@@ -1,0 +1,154 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Bodoni Moda', serif;
+}
+header {
+  background-color: #f8e9d2;
+  padding: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spin {
+  width: 400px;
+  height: 400px;
+  animation: spin 9s linear infinite; 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 30px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c48552;
+}
+
+
+/* Precios */
+
+#sec1{
+  background-color: bisque;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+article{
+  top: 150px;
+  text-align: center;
+  margin: 25px;
+  background-color: #744d05;
+  color: white;
+  height: 260px;
+  width: 300px;
+  padding: 20px;
+}
+
+article img{
+  height: 200px;
+  width: 250px;
+}
+article img:hover{
+
+  transform: scale(1.1);
+}
+
+.zoom{
+  transition: transform 0.5s ease;
+}
+
+
+#sec2{
+  background-color: rgb(235, 169, 71);
+  height: 650px;
+}
+
+#sec2 p{
+  text-align: center;
+  margin: 40px;
+  font-weight: bold;
+}
+
+#sec2 h2{
+  padding-top: 50px;
+  text-align: center;
+ 
+}
+.panaderos{
+  display: flex;
+}
+
+.panaderos img{
+  margin: 40px;
+  width: 250px;
+  height: 250px;
+  filter: sepia(1);
+  box-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.2),
+    -2px -2px 4px rgba(255, 255, 255, 0.2);
+  
+
+}
+.panaderos img:hover{
+filter: none;
+transform: scale(1.1);
+}
+
+footer{
+  height: 300px;
+  background-color: #c48552;
+  display: flex;
+  align-items: center;
+}
+.social-icons{
+  display: flex;
+ margin: 90px;
+  width: 10px;
+}
+.icon{
+  width: 60px;
+  margin: 20px;
+  margin-left: 90px;
+}
+.icon:hover{
+ transform: scale(1.3);
+}
+h1{
+  text-align: center;
+}
+footer p{
+  margin-left: 760px;
+}
